@@ -13,7 +13,7 @@ This directory contains Data Science and AI solutions to the projects I did at F
 Here is the complete list of projects in this directory, each project has its description in its respective folder.
 
 - [Project 1: Market Basket Analysis for E-commerce.](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/tree/master/DataScienceandAIprojects/Market_Basket_Analysis)
-- Project 2: Hotel Reservation Analysis in SQL and Tableau.
+- [Project 2: Hotel Reservation Analysis in SQL and Tableau.](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/tree/master/DataScienceandAIprojects/Hotel_Reservation_Analysis)
 - Project 3: Sentiment Analysis for Product Reviews.
 - Project 4: Insurance Analysis with BigQuery, Tableau, and Google Data Studio.
 - Project 5: Churn Prediction Model and Heroku Deployment.
