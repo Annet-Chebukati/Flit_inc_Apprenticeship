@@ -18,7 +18,7 @@ Here is the complete list of projects in this directory, each project has its de
 - Project 4: Insurance Analysis with BigQuery, Tableau, and Google Data Studio.
 - Project 5: Churn Prediction Model and Heroku Deployment.
 - Project 6: Time Series Forecasting for Sales Project.
-- 7: Basic Fraud Detection with Supervised Learning.
+- Project 7: Basic Fraud Detection with Supervised Learning.
 - Project 8: Advanced Fraud Detection with Anomaly Detection.
 - Project 9: Implementing Cutting-Edge Fraud Detection with Deep Learning.
 - Project 10:  Enhancing Player Retention through A/B Testing in "Cookie Cats" Mobile Game.
