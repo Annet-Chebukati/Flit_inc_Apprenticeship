@@ -1,12 +1,12 @@
-This directory contains Data Science and AI solutions to the projects I did at Flit Apprenticeship Programme.
+This directory contains Data Science and AI solutions to the projects I did at the Flit Apprenticeship Programme.
 
 # Requirements/Tools
 
-- Data Analysis tools: Python(Pandas, Numpy, Scikit-Learn)
-- Data Visualization: (Matplotlib, Seaborn, Plotly)
-- Jupiter Notebooks.
-- Tableau
-- Languages: Python, SQL, R
+- Data Analysis tools: Excel, Power BI, Tableau, BigQuery, Google Data Studio, Power Pivot, Power Query, VBA, Macabacus, Azure, Jupiter Notebook. PowerPoint.
+- Data Visualization: (Matplotlib, Seaborn, Plotly, Tableau,)
+- Languages: Python (Pandas, Numpy, Scikit-Learn, Scipy, TensorFlow, Keras, Seaborn, Plotly, Matplotlib), R, SQL.
+- Methodologies: Data Management, Statistics, Data Visualization, Data Presentation and Communication, Machine Learning, Problem-solving, Research, Collaboration, Financial Analysis, Modeling and Valuation, Business Intelligence, Exploratory Data Analysis, Feature Engineering, Deep Learning, Time Series Analysis, Natural Language Processing.
+
 
 # Projects
 
