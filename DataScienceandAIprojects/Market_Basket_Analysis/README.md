@@ -40,7 +40,7 @@ Imagine you are working for a retail company and have access to a dataset contai
 
 **7. Presentation:**
 - Document all my findings, code, and visualizations in a Jupyter Notebook.
-- Prepare a presentation or report for my mentorship group.
+- Prepare a presentation or report for your mentorship group.
 
 ## Deliverables
 - A well-documented Jupyter Notebook containing code and explanations.
