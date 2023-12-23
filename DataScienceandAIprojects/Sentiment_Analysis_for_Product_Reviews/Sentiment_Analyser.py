@@ -4,30 +4,19 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import re
-import matplotlib.pyplot as plt
-import seaborn as sns
 import spacy
-from wordcloud import WordCloud
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, f1_score, classification_report, confusion_matrix
 from imblearn.over_sampling import SMOTE
 from sklearn.metrics import roc_auc_score
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.ensemble import RandomForestClassifier
 
-# Ignore warnings
-import warnings
-warnings.filterwarnings("ignore")
 
-# Set the style for plots
-plt.style.use('ggplot')
 
 # Load the data
-@st.cache_data
+@st.cache
 def load_data():
     data_path = "https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Amazon%20Product%20Review.txt"
     amz_df = pd.read_csv(data_path)
