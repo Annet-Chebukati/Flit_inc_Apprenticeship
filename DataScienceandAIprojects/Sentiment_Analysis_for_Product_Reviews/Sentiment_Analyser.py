@@ -36,7 +36,7 @@ def clean_text(Review):
 amz_df['review_body'] = amz_df['review_body'].apply(clean_text)
 
 # Load the English model for spaCy
-nlp = spacy.load('en')
+nlp = spacy.load('en_core_web_sm')
 
 # Apply the spaCy pipeline to reviews
 amz_df['reviews_text'] = amz_df['review_body'].apply(lambda row: ' '.join([token.lemma_ for token in nlp(row) if not token.is_stop]))
