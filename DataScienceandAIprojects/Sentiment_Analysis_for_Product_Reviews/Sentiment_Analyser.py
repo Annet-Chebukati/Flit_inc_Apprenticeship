@@ -13,7 +13,8 @@ from sklearn.metrics import roc_auc_score
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.ensemble import RandomForestClassifier
 
-
+import spacy.cli
+spacy.cli.download("en_core_web_sm")
 
 # Load the data
 @st.cache(allow_output_mutation=True)
