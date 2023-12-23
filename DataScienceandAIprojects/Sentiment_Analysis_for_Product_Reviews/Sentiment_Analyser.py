@@ -13,9 +13,6 @@ from sklearn.metrics import roc_auc_score
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.ensemble import RandomForestClassifier
 
-import spacy.cli
-spacy.cli.download("en_core_web_sm")
-
 # Load the data
 @st.cache(allow_output_mutation=True)
 def load_data():
@@ -39,7 +36,7 @@ def clean_text(Review):
 amz_df['review_body'] = amz_df['review_body'].apply(clean_text)
 
 # Load the English model for spaCy
-nlp = spacy.load('en_core_web_sm')
+nlp = spacy.load('en')
 
 # Apply the spaCy pipeline to reviews
 amz_df['reviews_text'] = amz_df['review_body'].apply(lambda row: ' '.join([token.lemma_ for token in nlp(row) if not token.is_stop]))
