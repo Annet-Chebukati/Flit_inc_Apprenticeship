@@ -18,7 +18,7 @@ from sklearn.ensemble import RandomForestClassifier
 # Load the data
 @st.cache
 def load_data():
-    data_path = "https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Amazon%20Product%20Review.txt"
+    data_path = "https://raw.githubusercontent.com/Annet-Chebukati/Flit_inc_Apprenticeship/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Amazon%20Product%20Review.txt"
     amz_df = pd.read_csv(data_path)
     return amz_df
 
