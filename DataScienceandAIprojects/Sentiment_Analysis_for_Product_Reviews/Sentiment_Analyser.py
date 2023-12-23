@@ -1,10 +1,9 @@
-
 # Import necessary libraries
 import streamlit as st
 import pandas as pd
 import numpy as np
 import re
-import spacy
+from textblob import TextBlob
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score, f1_score, classification_report, confusion_matrix
@@ -35,11 +34,8 @@ def clean_text(Review):
 
 amz_df['review_body'] = amz_df['review_body'].apply(clean_text)
 
-# Load the English model for spaCy
-nlp = spacy.load('en_core_web_sm')
-
-# Apply the spaCy pipeline to reviews
-amz_df['reviews_text'] = amz_df['review_body'].apply(lambda row: ' '.join([token.lemma_ for token in nlp(row) if not token.is_stop]))
+# Apply the TextBlob pipeline to reviews
+amz_df['reviews_text'] = amz_df['review_body'].apply(lambda row: ' '.join([word.lemmatize() for word in TextBlob(row).words if word not in TextBlob(row).noun_phrases]))
 
 # Define the resampling method
 method = SMOTE(random_state=42)
@@ -64,7 +60,7 @@ y_pred = clf.predict(X_test)
 st.title('Sentiment Analysis for Product Reviews')
 st.write('This app uses a Random Forest Classifier to classify the sentiment of Amazon Product Reviews.')
 st.write(
-    'To explore the Amazon Product Review data, please check out my [Github](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Amazon%20Product%20Review.txt). To see my source code, have a look at my [GitHub repo](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/tree/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews).')
+    'To explore the Amazon Product Review data, please check out my Github. To see my source code, have a look at my GitHub repo.')
 st.write('*Note: it will take up a few seconds to run the app.*')
 st.write('Training accuracy:', fit_model.score(X_train, y_train))
 st.write('Test accuracy:', fit_model.score(X_test, y_test))
@@ -91,3 +87,4 @@ if submit:
         st.error('Negative sentiment 😞')
     else:
         st.success('Positive sentiment 😄')
+
