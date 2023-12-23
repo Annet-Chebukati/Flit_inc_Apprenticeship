@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import re
-from textblob import TextBlob
+from nltk.tokenize import word_tokenize
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score, f1_score, classification_report, confusion_matrix
@@ -34,8 +34,8 @@ def clean_text(Review):
 
 amz_df['review_body'] = amz_df['review_body'].apply(clean_text)
 
-# Apply the TextBlob pipeline to reviews
-amz_df['reviews_text'] = amz_df['review_body'].apply(lambda row: ' '.join([word.lemmatize() for word in TextBlob(row).words if word not in TextBlob(row).noun_phrases]))
+# Apply the NLTK tokenization to reviews
+amz_df['reviews_text'] = amz_df['review_body'].apply(lambda row: ' '.join([word for word in word_tokenize(row)]))
 
 # Define the resampling method
 method = SMOTE(random_state=42)
