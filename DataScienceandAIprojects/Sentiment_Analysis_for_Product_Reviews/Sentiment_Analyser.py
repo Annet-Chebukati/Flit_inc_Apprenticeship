@@ -1,3 +1,4 @@
+!python -m spacy download en_core_web_sm
 
 # Import necessary libraries
 import streamlit as st
@@ -16,7 +17,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 
 # Load the data
-@st.cache
+@st.cache(allow_output_mutation=True)
 def load_data():
     data_path = "https://raw.githubusercontent.com/Annet-Chebukati/Flit_inc_Apprenticeship/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Amazon%20Product%20Review.txt"
     amz_df = pd.read_csv(data_path)
