@@ -1,4 +1,3 @@
-!python -m spacy download en_core_web_sm
 
 # Import necessary libraries
 import streamlit as st
