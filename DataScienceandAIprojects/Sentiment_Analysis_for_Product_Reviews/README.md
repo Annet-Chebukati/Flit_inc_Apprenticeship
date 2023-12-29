@@ -22,7 +22,7 @@ In this project, I conducted sentiment analysis on a collection of product revie
 
 ## Key Deliverables
 - A detailed [presentation]() or report summarizing the project's findings and recommendations.
-- A comprehensive GitHub repository housing all documentation, [code](), and additional resources related to the project.
+- A comprehensive GitHub repository housing all documentation, [code](), and additional resources ([Jupyter Notebook](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Sentiment%20Analysis.ipynb)) related to the project.
 - An interactive dashboard was created using Streamlit to visualize and interact with the sentiment analysis results.
 
 # Streamlit Sentiment Analysis Web App
