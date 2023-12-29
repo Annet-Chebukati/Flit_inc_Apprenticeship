@@ -35,7 +35,7 @@ The [code](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/maste
 
 1. **Data Loading and Preprocessing**: The app loads a dataset of product reviews and preprocesses the text data using techniques like cleaning, tokenization, and lemmatization.
 
-2. **Model Training**: The app trains a Random Forest Classifier on the preprocessed data. The model is trained to predict whether a review is positive or negative.
+2. **Model Training**: The app trains a Random Forest Classifier on the preprocessed data. The model is trained to predict whether a review is positive or negative. ![Model Score](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/model%20score.png)
 
 3. **Web App Interface**: The app uses Streamlit to create a user-friendly web interface. Users can enter a review or upload a text file, and the app will use the trained model to predict the sentiment of the review.
 
