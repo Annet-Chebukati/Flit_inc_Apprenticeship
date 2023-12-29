@@ -1,9 +1,8 @@
-# Import necessary libraries
 import streamlit as st
 import pandas as pd
 import numpy as np
 import re
-from nltk.tokenize import word_tokenize
+import spacy
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score, f1_score, classification_report, confusion_matrix
@@ -34,8 +33,11 @@ def clean_text(Review):
 
 amz_df['review_body'] = amz_df['review_body'].apply(clean_text)
 
-# Apply the NLTK tokenization to reviews
-amz_df['reviews_text'] = amz_df['review_body'].apply(lambda row: ' '.join([word for word in word_tokenize(row)]))
+# Load the English model for spaCy
+nlp = spacy.load('en_core_web_sm')
+
+# Apply the spaCy pipeline to reviews
+amz_df['reviews_text'] = amz_df['review_body'].apply(lambda row: ' '.join([token.lemma_ for token in nlp(row) if not token.is_stop]))
 
 # Define the resampling method
 method = SMOTE(random_state=42)
@@ -56,35 +58,35 @@ clf = RandomForestClassifier(n_estimators=100, random_state=42)
 fit_model = clf.fit(X_train, y_train)
 y_pred = clf.predict(X_test)
 
-# Streamlit code to display results
-st.title('Sentiment Analysis for Product Reviews')
-st.write('This app uses a Random Forest Classifier to classify the sentiment of Amazon Product Reviews.')
-st.write(
-    'To explore the Amazon Product Review data, please check out my Github. To see my source code, have a look at my GitHub repo.')
-st.write('*Note: it will take up a few seconds to run the app.*')
-st.write('Training accuracy:', fit_model.score(X_train, y_train))
-st.write('Test accuracy:', fit_model.score(X_test, y_test))
-st.write('AUC-ROC:', roc_auc_score(y_test, y_pred))
-st.text('Classification Report:')
-st.text(classification_report(y_test, y_pred))
-st.text('Confusion Matrix:')
-st.text(confusion_matrix(y_test, y_pred))
+def run():
+    st.title('Sentiment Analysis for Product Reviews')
+    st.header('This app uses a Random Forest Classifier to classify the sentiment of Amazon Product Reviews.')
+    add_selectbox = st.sidebar.selectbox("How would you like to predict?", ("Online", "Txt file"))
+    if add_selectbox == "Online":
+        user_input = st.text_area('Enter your review')
+        if st.button("Predict"):
+            # Vectorize the user's input
+            user_input_vectorized = vectorizer.transform([user_input])
+            # Predict the sentiment of the user's input
+            prediction = clf.predict(user_input_vectorized)
+            # Display the prediction with a matching emoji
+            if prediction == 0:
+                st.error('Negative sentiment 😞')
+            else:
+                st.success('Positive sentiment 😄')
+    elif add_selectbox == "Txt file":
+        file_buffer = st.file_uploader("Upload text file for new item", type=["txt"])
+        if st.button("Predict"):
+            text_news = file_buffer.read()
+            # Vectorize the user's input
+            user_input_vectorized = vectorizer.transform([text_news])
+            # Predict the sentiment of the user's input
+            prediction = clf.predict(user_input_vectorized)
+            # Display the prediction with a matching emoji
+            if prediction == 0:
+                st.error('Negative sentiment 😞')
+            else:
+                st.success('Positive sentiment 😄')
 
-# Create a form for user input
-form = st.form(key='sentiment-form')
-user_input = form.text_area('Enter your review')
-submit = form.form_submit_button('Submit')
-# Process the user input when the form is submitted
-if submit:
-    # Vectorize the user's input
-    user_input_vectorized = vectorizer.transform([user_input])
-
-    # Predict the sentiment of the user's input
-    prediction = clf.predict(user_input_vectorized)
-
-    # Display the prediction with a matching emoji
-    if prediction == 0:
-        st.error('Negative sentiment 😞')
-    else:
-        st.success('Positive sentiment 😄')
-
+if __name__ == "__main__":
+    run()
