@@ -50,7 +50,9 @@ To run the app on your laptop using Anaconda Command Prompt(CMD.exe prompt), fol
 3. **Install streamlit in your Environment**: If you haven't installed it yet you can do it by running `pip install streamlit` in your terminal.
 
 .4 **Run the App**: Start the Streamlit server by running `streamlit run sentimentapp.py --client.showErrorDetails=false`. This will start the app and provide a URL to access it.
+
 ![App online view](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Image3.png)
+
 ![App TXT file view](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Image2.png)
 
 ## Testing the App
@@ -60,6 +62,7 @@ Once the app is running, you can test it by entering a review or uploading a tex
 Here are some sample reviews you can use for testing:
 
 ![Positive Review](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Image1.png)
+
 ![Negative Review](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Image4.png)
 
 Remember, the app is just a tool and its predictions are not always 100% accurate. Always use your judgment when interpreting the results.
