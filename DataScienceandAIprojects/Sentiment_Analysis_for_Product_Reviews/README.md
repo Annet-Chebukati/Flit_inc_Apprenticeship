@@ -49,7 +49,7 @@ To run the app on your laptop using Anaconda Command Prompt(CMD.exe prompt), fol
 
 3. **Install streamlit in your Environment**: If you haven't installed it yet you can do it by running `pip install streamlit` in your terminal.
 
-.4 **Run the App**: Start the Streamlit server by running `streamlit run sentimentapp.py --client.showErrorDetails=false`. This will start the app and provide a URL to access it.
+4. **Run the App**: Start the Streamlit server by running `streamlit run sentimentapp.py --client.showErrorDetails=false`. This will start the app and provide a URL to access it.
 
 ![App online view](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Image3.png)
 
