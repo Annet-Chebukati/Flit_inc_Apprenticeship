@@ -21,7 +21,7 @@ In this project, I conducted sentiment analysis on a collection of product revie
 8. **Sentiment Analysis Dashboard**: An interactive dashboard was created using Streamlit to visualize and interact with the sentiment analysis results.
 
 ## Key Deliverables
-- A detailed [presentation]() or report summarizing the project's findings and recommendations.
+- A detailed [presentation](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Sentiment%20Analysis%20Presentation.pdf) or report summarizing the project's findings and recommendations.
 - A comprehensive GitHub repository housing all documentation, [code](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/sentimentapp.py), and additional resources ([Jupyter Notebook](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Sentiment%20Analysis.ipynb)) related to the project.
 - An interactive dashboard was created using Streamlit to visualize and interact with the sentiment analysis results.
 
