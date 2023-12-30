@@ -21,8 +21,8 @@ In this project, I conducted sentiment analysis on a collection of product revie
 8. **Sentiment Analysis Dashboard**: An interactive dashboard was created using Streamlit to visualize and interact with the sentiment analysis results.
 
 ## Key Deliverables
-- A detailed [presentation]() or report summarizing the project's findings and recommendations.
-- A comprehensive GitHub repository housing all documentation, [code](), and additional resources related to the project.
+- A detailed [presentation](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Sentiment%20Analysis%20Presentation.pdf) or report summarizing the project's findings and recommendations.
+- A comprehensive GitHub repository housing all documentation, [code](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/sentimentapp.py), and additional resources ([Jupyter Notebook](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Sentiment%20Analysis.ipynb)) related to the project.
 - An interactive dashboard was created using Streamlit to visualize and interact with the sentiment analysis results.
 
 # Streamlit Sentiment Analysis Web App
@@ -43,13 +43,13 @@ The [code](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/maste
 
 To run the app on your laptop using Anaconda Command Prompt(CMD.exe prompt), follow these steps:
 
-1. **Download the streamlitapp.py file**: Download the streamlit.py file containing the code to your local machine.
+1. **Download the sentimentapp.py file**: Download the [sentimentapp.py](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/sentimentapp.py) file containing the code to your local machine.
 
-2. **Open Anaconda Command Prompt**: Open the Anaconda Navigator Launch CMD.exe Prompt and navigate to the directory containing the code for example `cd Desktop\streamlit_app`.
+2. **Open Anaconda Command Prompt**: Open the Anaconda Navigator Launch CMD.exe Prompt and navigate to the directory containing the code for example `cd Desktop\sentiment_app`.
 
 3. **Install streamlit in your Environment**: If you haven't installed it yet you can do it by running `pip install streamlit` in your terminal.
 
-.4 **Run the App**: Start the Streamlit server by running `streamlit run sentimentapp.py --client.showErrorDetails=false`. This will start the app and provide a URL to access it.
+4. **Run the App**: Start the Streamlit server by running `streamlit run sentimentapp.py --client.showErrorDetails=false`. This will start the app and provide a URL to access it.
 
 ![App online view](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews/Image3.png)
 
