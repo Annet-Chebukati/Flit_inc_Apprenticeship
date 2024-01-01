@@ -1,5 +1,7 @@
 # Market Basket Analysis for E-commerce
 
+![Heatmap](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Market_Basket_Analysis/HeatMap.png)
+
 ## Objective
 The goal of this project is to introduce the concept of market basket analysis, which is a crucial aspect of data science in retail and e-commerce. Learn how to extract valuable insights from transaction data, understand customer purchasing behavior, and use this knowledge for business optimization.
 
