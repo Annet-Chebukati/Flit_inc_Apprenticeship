@@ -1,5 +1,7 @@
 # Hotel Reservation Analysis in SQL and Tableau
 
+![Dashboard](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Hotel_Reservation_Analysis/Dashboard.png)
+
 You can find my Hotel Reservation analysis resources below:
 
 - **Tableau Dashboard**: [View Dashboard](https://public.tableau.com/views/Hotel_Reservation_Analysis/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link)
