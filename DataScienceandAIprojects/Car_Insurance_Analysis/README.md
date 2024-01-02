@@ -12,7 +12,7 @@ In this project, I will analyze a dataset from a Car Insurance company. Utilizin
 ## Process and Methodology
 1. **Data Preparation**: Begin by importing the car insurance dataset into Google BigQuery, ensuring the data is clean and structured for analysis.
 2. **Data Analysis**: Conduct an initial exploration to understand the data's characteristics and identify any patterns.
-3. **Dashboard Creation**: Create dashboards in Tableau for upper management and another [operational dashboard](https://lookerstudio.google.com/reporting/14ab11f1-8f88-4602-8319-66aff18c737b) in Google Data Studio.
+3. **Dashboard Creation**: Create dashboards in [Tableau for upper management](https://public.tableau.com/views/CarInsuranceAnalysis_17042135260620/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link) and another [operational dashboard](https://lookerstudio.google.com/reporting/14ab11f1-8f88-4602-8319-66aff18c737b) in Google Data Studio.
 4. **Presentation**: The findings will be presented to the relevant stakeholders.
 
 ## Key Deliverables
