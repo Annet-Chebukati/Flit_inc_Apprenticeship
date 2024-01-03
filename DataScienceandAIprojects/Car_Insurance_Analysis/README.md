@@ -1,5 +1,13 @@
 # Car Insurance Analysis with BigQuery, Tableau, and Google Data Studio
 
+**UPPER MANAGEMENT DASHBOARD**
+
+![Dashbord](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Car_Insurance_Analysis/UM%20Dashboard.png)
+
+**OPERATIONAL TEAMS DASHBOARD**
+
+![Dashboard](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Car_Insurance_Analysis/Operational%20DB.png)
+
 ## Overview
 In this project, I will analyze a dataset from a Car Insurance company. Utilizing a combination of data analysis and visualization tools, I will develop insightful dashboards designed for insurance analysis. The project caters to two distinct audiences: upper management, who will use Tableau, and operational teams, who will rely on Google Data Studio.
 
@@ -19,4 +27,6 @@ In this project, I will analyze a dataset from a Car Insurance company. Utilizin
 - A Google BigQuery dataset with car insurance data.
 - A Tableau dashboard tailored for upper management.
 - A Google Data Studio dashboard designed for operational use.
+- Upper Management dashboard [presentation](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Car_Insurance_Analysis/Upper%20Management%20Dashboard%20Presentation.pdf).
+- Operational teams dashboard [presentation](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Car_Insurance_Analysis/Operational%20Dashboard%20Presentation.pdf).
 - A comprehensive GitHub repository housing all documentation and code related to the project.
