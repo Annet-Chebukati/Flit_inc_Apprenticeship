@@ -16,8 +16,8 @@ Here is the complete list of projects in this directory, each project has its de
 - [Project 2: Hotel Reservation Analysis in SQL and Tableau.](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/tree/master/DataScienceandAIprojects/Hotel_Reservation_Analysis)
 - [Project 3: Sentiment Analysis for Product Reviews.](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/tree/master/DataScienceandAIprojects/Sentiment_Analysis_for_Product_Reviews)
 - [Project 4: Insurance Analysis with BigQuery, Tableau, and Google Data Studio.](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/tree/master/DataScienceandAIprojects/Car_Insurance_Analysis)
-- Project 5: Churn Prediction Model and Heroku Deployment.
-- Project 6: Time Series Forecasting for Sales Project.
+- [Project 5: Churn Prediction Model and Heroku Deployment.](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/tree/master/DataScienceandAIprojects/Churn_prediction_model)
+- [Project 6: Time Series Forecasting for Sales Project.](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/tree/master/DataScienceandAIprojects/Historical_Weather_Data_Analysis)
 - Project 7: Basic Fraud Detection with Supervised Learning.
 - Project 8: Advanced Fraud Detection with Anomaly Detection.
 - Project 9: Implementing Cutting-Edge Fraud Detection with Deep Learning.
