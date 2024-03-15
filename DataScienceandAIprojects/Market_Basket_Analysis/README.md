@@ -1,5 +1,7 @@
 # Market Basket Analysis for E-commerce
 
+View [JUPYTER NOTEBOOK](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Market_Basket_Analysis/Market%20Basket%20Analysis%20in%20Python.ipynb) with full code and explanations.
+
 ![Heatmap](https://github.com/Annet-Chebukati/Flit_inc_Apprenticeship/blob/master/DataScienceandAIprojects/Market_Basket_Analysis/HeatMap.png)
 
 ## Objective
