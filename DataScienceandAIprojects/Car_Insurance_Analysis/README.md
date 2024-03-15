@@ -1,7 +1,7 @@
 # Car Insurance Analysis with BigQuery, Tableau, and Google Data Studio
 
-View [Tableau for upper management](https://public.tableau.com/views/CarInsuranceAnalysis_17042135260620/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link) dashboard.
-View [operational dashboard](https://lookerstudio.google.com/reporting/14ab11f1-8f88-4602-8319-66aff18c737b) in Google Data Studio.
+- View [Tableau for upper management](https://public.tableau.com/views/CarInsuranceAnalysis_17042135260620/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link) dashboard.
+- View [operational dashboard](https://lookerstudio.google.com/reporting/14ab11f1-8f88-4602-8319-66aff18c737b) in Google Data Studio.
 
 **UPPER MANAGEMENT DASHBOARD**
 
